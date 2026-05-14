@@ -1,0 +1,100 @@
+
+  .up_to_off{
+    font-size:13px !important;
+    color:white !important;
+    transform:rotate(270deg) !important;
+    margin-top:55px;
+    width: 120px !important;
+    text-align: center !important
+  }
+  @media only screen and (max-width:1000px){
+
+    .up_to_off{
+      font-size:13px !important;
+      color:white !important;
+      transform:rotate(270deg) !important;
+      margin-top:64px !important;
+      width: 120px !important;
+      text-align: center !important
+    }
+  }
+
+  .coupon_code_try_it_now_btn{
+    flex-direction: row !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: flex-start !important;
+  }
+  .coupon_code_try_it_now_btn .coupon_code{
+    font-size: 20px !important;
+    color: red !important;
+    border: 1px dashed black !important;
+    padding: 1px 10px  !important;
+    border-radius: 30px !important;
+    background-color: #e1dddd !important
+  }
+  .coupon_code_try_it_now_btn .coupon_code_btn{
+    width:100px !important
+  }
+  
+  @media only screen and (max-width:500px){
+
+    .coupon_code_try_it_now_btn .coupon_code{
+      font-size: 16px !important;
+      color: red !important;
+      border: 1px dashed black !important;
+      padding: 1px 7px  !important;
+      border-radius: 20px !important;
+      background-color: #e1dddd !important
+    }
+    .coupon_code_try_it_now_btn .coupon_code_btn{
+      width:80px !important;
+      font-size: 10px !important;
+    }
+    .up_to_off{
+      font-size:13px !important;
+      color:white !important;
+      transform:rotate(270deg) !important;
+      margin-top:64px !important;
+      width: 120px !important;
+      text-align: center !important
+    }
+  }
+  @media only screen and (max-width:419px){
+    .coupon_code_try_it_now_btn{
+      flex-direction: column !important;
+      justify-content: flex-start !important;
+      align-items: flex-start !important;
+    }
+    .coupon_code_try_it_now_btn .coupon_code{
+      font-size: 16px !important;
+      color: red !important;
+      border: 1px dashed black !important;
+      padding: 1px 7px  !important;
+      border-radius: 20px !important;
+      background-color: #e1dddd !important
+    }
+    .coupon_code_try_it_now_btn .coupon_code_btn{
+      width:80px !important;
+      font-size: 10px !important;
+      margin-top:10px !important
+    }
+    .up_to_off{
+      font-size:13px !important;
+      color:white !important;
+      transform:rotate(270deg) !important;
+      margin-top:77px !important;
+      width: 120px !important;
+      text-align: center !important
+    } 
+  }
+  @media only screen and (max-width:350px){
+    .subscription_plan_drawer_custom_style{
+      width:270px !important;
+      overflow-y: scroll !important;
+    }
+  }
+  .selected_payment_gateway{
+    border:1px dotted #b7b2b2 !important;
+    border-radius:4px !important
+  }

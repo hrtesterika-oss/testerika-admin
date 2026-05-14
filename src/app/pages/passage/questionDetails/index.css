@@ -1,0 +1,12 @@
+.ql-toolbar.ql-snow + .ql-container.ql-snow{
+    min-height:60px !important;
+    background-color: #fff !important;
+}
+.ql-container.ql-snow{
+    min-height:60px !important;
+    background-color: #fff !important;
+}
+.quill.options_quill{
+    width:100% !important;
+    margin-left:10px !important
+}

@@ -1,0 +1,17 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import {FC} from 'react'
+
+type Props = {
+  name: any
+}
+
+const UserType: FC<Props> = ({name}) => {
+
+  return (
+    <div className='d-flex align-items-center'>
+      <div className='d-flex flex-column text-warning fw-bolder'>{name}</div>
+    </div>
+  )
+}
+
+export {UserType}

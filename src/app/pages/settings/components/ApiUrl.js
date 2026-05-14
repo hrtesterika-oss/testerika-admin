@@ -1,0 +1,1 @@
+export const API_URL=window.location.host==="localhost:3011"?"http://localhost:6008/api/common":"https://api.testerika.com/api/common"

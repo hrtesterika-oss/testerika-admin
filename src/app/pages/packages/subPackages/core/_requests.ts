@@ -1,0 +1,70 @@
+import axios, {AxiosResponse} from 'axios'
+import {ID, Response} from '../../../../../_metronic/helpers'
+import {User, UsersQueryResponse} from './_models'
+export const PASSESURL=window.location.host=="localhost:3011"?"http://localhost:6008/api/common":"https://api.testerika.com/api/common"
+const API_URL =window.location.host==="localhost:3011"?"http://localhost:6007/api/package": 'https://api.testerika.com/api/package'
+export const SUBPACKAGES_URL = `${API_URL}/subpackage`
+
+const getUsers = (query: string): Promise<any> => {
+  return axios.get(`${SUBPACKAGES_URL}/get/subPackages?${query}`).then((d: AxiosResponse<any>) => d.data)
+}
+const getUsersById = (query: string,id:any): Promise<any> => {
+  return axios.get(`${SUBPACKAGES_URL}/get/subPackages/${id}?${query}`).then((d: AxiosResponse<any>) => d.data)
+}
+
+
+const createUser = (user: User): Promise<User | undefined> => {
+  return axios
+    .post(SUBPACKAGES_URL, user)
+    .then((response: AxiosResponse<Response<User>>) => response.data)
+    .then((response: Response<User>) => response.data)
+}
+
+const updateSetting = (user: User): Promise<User | undefined> => {
+  return axios
+    .post(`${SUBPACKAGES_URL}/update`, user)
+    .then((response: AxiosResponse<Response<User>>) => response.data)
+    .then((response: Response<User>) => response.data)
+}
+
+const updateStatus = (status: any, id: ID): Promise<User | undefined> => {
+  return axios
+    .put(`${SUBPACKAGES_URL}/${id}`, status)
+    .then((response: AxiosResponse<Response<User>>) => response.data)
+    .then((response: Response<User>) => response.data)
+}
+
+const deleteSubPackages = (userId: any) => {
+  return axios.delete(`${SUBPACKAGES_URL}/${userId}`).then(() => {})
+}
+
+const deleteSelectedSubPackages = (userIds: Array<any>): Promise<void> => {
+  const requests = userIds.map((id) => axios.delete(`${SUBPACKAGES_URL}/delete/subPackages/${id}`))
+  return axios.all(requests).then(() => {})
+}
+
+export const createUpdateSubPackages=(data:any)=>{
+    return axios.post(`${SUBPACKAGES_URL}/createUpdate`,data)
+}
+export const getAllSubPackages=()=>{
+    return axios.get(`${SUBPACKAGES_URL}/get/subPackages`)
+}
+export const getAllSubPackagesById=(id:any)=>{
+    return axios.get(`${SUBPACKAGES_URL}/get/subPackages/${id}`)
+}
+export const getSubPackageById=(id:any)=>{
+    return axios.get(`${SUBPACKAGES_URL}/get/subPackages/getById/${id}`)
+}
+export const deleteSubPackageById=(id:any)=>{
+    return axios.delete(`${SUBPACKAGES_URL}/delete/subPackages/${id}`)
+}
+
+export {
+  getUsers,
+  getUsersById,
+  deleteSelectedSubPackages,
+  deleteSubPackages,
+  createUser,
+  updateSetting,
+  updateStatus,
+}

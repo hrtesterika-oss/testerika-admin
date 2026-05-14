@@ -1,0 +1,9 @@
+.ques_index:nth-child(odd){
+   background-color: #deecf4 !important;
+}
+.ques_index:nth-child(even){
+    background-color: #f5f0e9 !important;
+ }
+ .shadowss{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
+ }

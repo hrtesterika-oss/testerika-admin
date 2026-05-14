@@ -1,0 +1,13 @@
+.active_paymnet_gateway{
+    color: #009ef7 !important;
+   
+}
+.credential_active_paymnet_gateway{
+    width:200px !important ;
+    text-align: center !important;
+    background-color: #009ef7 !important;
+    color:white !important;
+    padding:10px 20px !important;
+    border-radius: 10px !important;
+    font-size: 12px !important;
+}

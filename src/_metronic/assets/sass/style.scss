@@ -1,0 +1,67 @@
+//
+// Theme style
+//
+
+// Mode
+$mode: default;
+
+// Initialize
+@import 'init';
+
+// Components
+@import './core/components/components';
+@import 'components/components';
+
+// Layout
+@import 'layout/layout';
+@import './core/layout/docs/layout';
+
+.aside-menu .menu-item .menu-icon {
+    justify-content: flex-start;
+  }
+  .aside-dark .hover-scroll-overlay-y {
+    --scrollbar-space: 0.4rem;
+    scrollbar-color: #F3F8F9 transparent;
+  }
+  .aside-dark .hover-scroll-overlay-y::-webkit-scrollbar-thumb {
+    background-color: #F3F8F9;
+  }
+  .aside-dark .hover-scroll-overlay-y:hover {
+    scrollbar-color: #E9EDF1 transparent;
+  }
+  .aside-dark .hover-scroll-overlay-y:hover::-webkit-scrollbar-thumb {
+    background-color: #E9EDF1;
+  }
+
+  .navbar {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    background: red;
+  }
+  
+  .navbarSticky {
+    background: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    animation: moveDown 0.5s ease-in-out;
+  }
+  
+  @keyframes moveDown {
+    from {
+      transform: translateY(-5rem);
+    }
+    to {
+      transform: translateY(0rem);
+    }
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotateY(360deg);
+    }
+    100% {
+      transform: rotateY(0rem);
+    }
+  }

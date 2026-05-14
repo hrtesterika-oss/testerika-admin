@@ -1,0 +1,2 @@
+export const QUIZOPHY_WEBSITE_API_URL=window.location.host==="localhost:3011"?"http://localhost:5006/api/conferenceQuiz/web/admin-setting":"https://api.testerika.com/api/conferenceQuiz/web/admin-setting"
+export const QUIZOPHY_PODIUM_API_URL=window.location.host==="localhost:3011"?"http://localhost:5006/api/conferenceQuiz/quiz/admin":"https://api.testerika.com/api/conferenceQuiz/quiz/admin"

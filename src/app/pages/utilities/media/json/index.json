@@ -1,0 +1,15 @@
+{
+    "files": [
+      { "id": "1", "name": "file1.txt", "type": "file" },
+      { "id": "2", "name": "file2.jpg", "type": "file" },
+      { "id": "3", "name": "folder1", "type": "folder", "files": [
+        { "id": "4", "name": "file3.png", "type": "file" },
+        { "id": "5", "name": "file4.pdf", "type": "file" }
+      ]},
+      { "id": "6", "name": "file5.docx", "type": "file" },
+      { "id": "7", "name": "folder2", "type": "folder", "files": [
+        { "id": "8", "name": "file6.jpg", "type": "file" }
+      ]}
+    ]
+  }
+  
